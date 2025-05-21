@@ -1,0 +1,22 @@
+[run]
+omit =
+    */migrations/*
+    */admin.py
+    */apps.py
+    */tests.py
+    */tests/*
+    */urls.py
+    */settings.py
+    */translation.py
+    */templatetags/*
+    */__init__.py
+    */utils.py
+    # omit all except forms, models, views:
+    # you can explicitly include with --source in command line
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def _str_
+    if self\.debug
+    if settings\.DEBUG
